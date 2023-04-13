@@ -30,3 +30,14 @@ simplifyFastaHeaders.pl prots.fa prot proteins.fa header.map
 simplifyFastaHeaders.pl is part of AUGUSTUS at https://github.com/Gaius-Augustus/Augustus/tree/master/scripts .
 
 For single-single-reference-proteome run, headers were modified without concatenation.
+
+### Miniprothint scoring figure
+
+Figure 3 (a scatterplot of introns predicted by miniprot, characterized by miniprothint-derived IMC and IBA scores) was generated from the reference annotation (the source described above) and `miniprot.gff` (generated during a GALBA run) in the following way:
+
+```
+collapseGff.py miniprot.gff > miniprotCollapsed.gff
+visualizeMiniprothint.py miniprotCollapsed.gffannot.gtf figure.pdf --ylim 25
+```
+
+Both `collapseGff.py` and `visualizeMiniprothint.py` are available at https://github.com/tomasbruna/miniprothint. **TODO**: Upload the visualizeMiniprothint.py script there. 
