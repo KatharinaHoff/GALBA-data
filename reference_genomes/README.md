@@ -42,4 +42,4 @@ sort -k1,1 -k4,4n -k5,5n miniprotCollapsed.gff > miniprotCollapsedSorted.gff
 visualizeMiniprothint.py miniprotCollapsedSorted.gff annot.gtf figure.pdf --ylim 25
 ```
 
-Both `collapseGff.py` and `visualizeMiniprothint.py` are available at https://github.com/tomasbruna/miniprothint. **TODO**: Upload the visualizeMiniprothint.py script there. 
+Both `collapseGff.py` and `visualizeMiniprothint.py` are available at https://github.com/tomasbruna/miniprothint.
