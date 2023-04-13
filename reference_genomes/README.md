@@ -35,9 +35,11 @@ For single-single-reference-proteome run, headers were modified without concaten
 
 Figure 3 (a scatterplot of introns predicted by miniprot, characterized by miniprothint-derived IMC and IBA scores) was generated from the reference annotation (the source described above) and `miniprot.gff` (generated during a GALBA run) in the following way:
 
-```
+```bash
 collapseGff.py miniprot.gff > miniprotCollapsed.gff
-visualizeMiniprothint.py miniprotCollapsed.gffannot.gtf figure.pdf --ylim 25
+# Sorting by coordinates ensures the FPs and TPs are well-mixed
+sort -k1,1 -k4,4n -k5,5n miniprotCollapsed.gff > miniprotCollapsedSorted.gff
+visualizeMiniprothint.py miniprotCollapsedSorted.gff annot.gtf figure.pdf --ylim 25
 ```
 
 Both `collapseGff.py` and `visualizeMiniprothint.py` are available at https://github.com/tomasbruna/miniprothint. **TODO**: Upload the visualizeMiniprothint.py script there. 
