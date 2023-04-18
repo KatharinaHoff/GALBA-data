@@ -24,3 +24,11 @@ The genome was subsequently softmasked for repeats with RepeatMasker:
 ```
 RepeatMasker -pa 72 -lib ${DB}-families.fa -xsmall ${GENOME}
 ```
+
+## Running GALBA
+
+GALBA was run with the following command:
+
+```
+galba.pl --genome=genome.fa --prot_seq=proteins.fa --threads 72
+```

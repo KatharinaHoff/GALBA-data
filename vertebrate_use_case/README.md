@@ -51,3 +51,11 @@ bedtools merge -i sorted | awk ’BEGIN{OFS="\t"} {print $1,"trf","repeat",$2+1,
 
 bedtools maskfasta -fi ${GENOME}.masked -bed ${GENOME}.2.7.7.80.10.50.500.merged.gff -fo ${GENOME}.combined.masked -soft
 ```
+
+## Running GALBA
+
+GALBA was run with the following command:
+
+```
+galba.pl --genome=genome.fa --prot_seq=proteins.fa --threads 72
+```

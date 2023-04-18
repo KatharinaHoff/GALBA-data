@@ -15,3 +15,11 @@ Genomes were extracted and softlinked in separate directories as follows (we use
 gunzip *.fna.gz
 ln -s *.fna.gz genome.fa
 ```
+
+## Running GALBA
+
+GALBA was run with the following command:
+
+```
+galba.pl --genome=genome.fa --prot_seq=proteins.fa --threads 72
+```
