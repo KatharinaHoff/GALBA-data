@@ -1,8 +1,12 @@
+# GALBA Software
+
+The software GALBA is available at **https://github.com/Gaius-Augustus/GALBA**
+
 # Data for the GALBA manuscript
 
 Tomas Bruna, Joseph Guhlin, Katharina J Hoff
 
-Reference: [GALBA: Genome Annotation with Miniprot and AUGUSTUS](https://www.biorxiv.org/content/10.1101/2023.04.10.536199v1.abstract)
+Reference: [GALBA: Genome Annotation with Miniprot and AUGUSTUS](https://doi.org/10.1186/s12859-023-05449-z)
 
 Overview
 --------
